@@ -89,3 +89,17 @@ El prompt es un prompt estructurado, en la tabla se muestra las diferentes tecni
 | `<ejemplo></ejemplo>` | **Few-shot** | Flujo esperado en consola al actualizar stock:<ul><li>El usuario elige la opción "Actualizar componente" en el menú principal.</li><li>Puede buscar por ID o filtrar por categoría o tipo (ej. "Condensador" / "Electrolítico") o una palabra contenida.</li><li>Ingresa el ID del componente con opcion de actualizar la cantidad como suma o resta, ejemplo: "-10, usado en un proyecto".</li><li>Mostrar un resumen del cambio antes de confirmar el cambio.</li><ul>|
 | `<formato></formato>` | **Descomposición** | Entrega la solución organizada en:<ol><li>Consultas SQL para la base de datos y tabla(s).</li><li>Modulo en codigo python con clases.</li><ol>|
 | `<validacion></validacion>` | **Autocrítica** | Verifica que:<ul><li>El código debe cubrir la inserción de nuevos componentes y actualización de registros existentes.</li><li>La contraseña y nombre de usuario de la base de datos Mysql permita el uso de simbolos ademas e los alfanumericos ($, %, #, @, etc).</li><ul>|
+
+## Evaluacion del resultado
+
+| Qué revisar |Cumple (Sí / No) |
+|---|---|
+| ¿Tiene script para la creacion de la base de datos y tablas? | Si |
+| ¿Muestra la estructura del proyecto? |  Si |
+| ¿Crea el modulo de conexion a la base de datos? | Si |
+| ¿Crea los modulos de las clases? | Si |
+| ¿Verifica que el usuario y contraseña permita el uso de caracteres especiales? | Si |
+
+## Por que elegi estas tecnicas
+
+Poruqe estoy describiendo lo que mi aplicacion necesita, tambien se proporciona el contexto, los dato, la funcionalidad y el formato de entrega.
